@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@import "tailwindcss";
+
+@theme{
+  --font-heading : Work Sans , "sans-serif";
+  --font-inner : Inter , "sans-serif";
+
+  --color-light-blue : #DCEBFE;
+  --color-dark-blue : #0144AE ;
+  --color-button-blue : #0160FE;
+  --color-light-button-blue : #4D8FFE ;
+  --color-primary : #F7F4F2 ;
+  
+}
