@@ -1,11 +1,9 @@
 import { Globe } from "lucide-react"
-
 const Header = () => {
   return (
-    <>
-        <div className="fixed top-14 w-full h-24 p-6 flex justify-between font-inner ">
+        <nav className="fixed top-14 w-full h-24 p-6 flex justify-between font-inner ">
 
-          <div className="flex justify-center items-center text-sm font-semibold relative">
+          <section className="flex justify-center items-center text-sm font-semibold ">
               <div className="flex justify-center items-center ">
                   <div className="bg-button-blue h-[40px] flex justify-center items-center w-[40px]">
                     <DropBoxLogo/>
@@ -16,150 +14,101 @@ const Header = () => {
               </div>
 
 
-              <div className=" group px-3 flex justify-center items-center gap-0.5 cursor-pointer  ">
+              <div  className=" group px-3 flex justify-center items-center gap-0.5 cursor-pointer relative ">
                 
-                <div className="flex justify-center hover:text-button-blue items-center">
+                <div className="flex  justify-center hover:text-button-blue items-center ">
                   Products <DownSvg/>
                 </div>
 
-                <div className="absolute -left-6 top-12 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100  group-hover:visible 
-                              duration-300 ease-in-out  group-hover:transform z-50 w-screen  transform bg-white  ">
-                  
-                  <div className="w-[50%] grid grid-cols-2 grid-rows-4">
+                <div className="absolute left-0 top-10 w-[800px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100  group-hover:visible 
+                              duration-300   group-hover:transform z-50 transform ">
 
-                            {
-                              data.map((i)=> <DropDownCard content={i.content} heading={i.heading} logo={i.logo}/>)
-                            }
+                  <div className="absolute top-0 -left-[195px] w-screen h-full shadow-2xl bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 z-[-1] transition duration-300 ease-in-out pointer-events-none"></div>
+
+                  <div className="grid grid-cols-2 grid-rows-4 ">
+
+                    {
+                      data.map((i)=> <DropDownCard content={i.content} heading={i.heading} logo={i.logo}/>)
+                    }
 
                   </div>
                   
-               
                 </div>
               </div>
               
-              <div className="px-3 flex justify-center items-center gap-0.5 cursor-pointer hover:text-button-blue ">Solutions <DownSvg/> </div>
-              <div className="px-3 cursor-pointer hover:text-button-blue ">Enterprise</div>
-              <div className="px-3 cursor-pointer hover:text-button-blue ">Pricing</div>
 
-              {/* <li className=" group px-3 py-2 ">
-                <button
-                  className="hover:opacity-50 cursor-default "
-                  aria-haspopup="true"
-                >
-                  Products
-                </button>
 
-                <div
-                  className="absolute left-0 transition group-hover:translate-y-5 translate-y-0 opacity-0  group-hover:opacity-100 group-hover:visible 
-                              duration-500  group-hover:transform z-50 w-screen border border-red-500 transform"
-                >
-                  <div
-                    className=" p-6 bg-white rounded-xl w-full"
-                  >
-                    <div className=" z-10">
 
-                      <div className="grid grid-cols-2 gap-6">
+              <div className="group px-3 flex justify-center items-center gap-0.5 cursor-pointer relative ">
+                <div className="flex  justify-center hover:text-button-blue items-center ">
+                  Solutions <DownSvg/>
+                </div>
+                
+                <div className="absolute left-0 top-10 w-[800px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100  group-hover:visible 
+                              duration-300   group-hover:transform z-50 transform ">
+                                
+                  <div className="absolute top-0 -left-[290px] w-screen h-full shadow-2xl bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 z-[-1] transition duration-300  ease-in-out pointer-events-none"></div>
 
-                        <div>
-                          <p
-                            className="uppercase tracking-wider text-gray-500 font-medium text-[13px]"
-                          >
-                            The Suite
-                          </p>
-                          <ul className="mt-3 text-[15px]">
-                            <li>
-                              <a
-                                href="#"
-                                className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              >
-                                Course Editor
-                                <p className="text-gray-500 font-normal">
-                                  All in one editor
-                                </p>
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#"
-                                className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              >
-                                Accept payments
-                                <p className="text-gray-500 font-normal">
-                                  Pre-build payments page
-                                </p>
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#"
-                                className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              >
-                                Close captioning
-                                <p className="text-gray-500 font-normal">
-                                  Use AI to generate captions
-                                </p>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+                  <div className="grid grid-cols-3 ">
 
-                        <div>
-                          <p
-                            className="uppercase tracking-wider text-gray-500 font-medium text-[13px]"
-                          >
-                            Extensions
-                          </p>
-                          <ul className="mt-4 text-[15px]">
-                            <li>
-                              <a
-                                href="#"
-                                className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              >
-                                Plugins
-                                <p className="text-gray-500 font-normal">
-                                  Tweak existing functionality
-                                </p>
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#"
-                                className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              >
-                                Batch uploads
-                                <p className="text-gray-500 font-normal">
-                                  Get your time back
-                                </p>
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#"
-                                className="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              >
-                                Social sharing
-                                <p className="text-gray-500 font-normal">
-                                  Generate content for socials
-                                </p>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-
+                      <div className=" list-none text-[gray] flex flex-col gap-2 ">Teams
+                          <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[14px] font-medium  ">Sales</li>
+                          <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[14px] font-medium  ">Marketing</li>
+                          <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[14px] font-medium  ">IT </li>
+                          <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[14px] font-medium  ">HR </li>
+                          <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[14px] font-medium  ">Creatives</li>
                       </div>
-                    </div>
+                      <div className=" list-none text-[gray] flex flex-col gap-2 ">Use case 
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Cloud Storage</li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Sent Large filse</li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Video Review  </li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Signing Documents </li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Sharing Files </li>
+                      </div>
+
+                      <div className=" list-none text-[gray] flex flex-col gap-2 pb-3">Industries 
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Construction </li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Technology </li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Manufacturing  </li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Media </li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Profational Srvices </li>
+                        <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[16px] font-medium  ">Education </li>
+                      </div>
                   </div>
+                  
                 </div>
 
-              </li> */}
-          </div>
 
-          <div className="flex justify-center items-center text-sm  ">
+
+                  
+              </div>
+              <div className="px-3 cursor-pointer hover:text-button-blue ">Enterprise</div>
+              <div className="px-3 cursor-pointer hover:text-button-blue ">Pricing</div>
+          </section>
+
+          <section className="flex justify-center items-center text-sm  ">
               <div className="px-3 font-semibold">
                 <Globe size={16}/>
               </div>
               <div className="px-3 cursor-pointer hover:text-button-blue ">Contact Sales</div>
-              <div className="px-3 flex justify-center items-center gap-0.5 cursor-pointer hover:text-button-blue ">Get App <DownSvg/> </div>
+              <div  className=" group px-3 flex justify-center items-center gap-0.5 cursor-pointer relative ">
+                
+                <div className="flex  justify-center hover:text-button-blue items-center ">
+                  Get App  <DownSvg/>
+                </div>
+
+                <div className="absolute left-0 top-10 w-[800px] transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100  group-hover:visible 
+                              duration-300   group-hover:transform z-50 transform ">
+
+                  <div className="absolute top-0 -left-[1300px] w-screen h-full shadow-2xl bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 z-[-1] transition duration-300 ease-in-out pointer-events-none"></div>
+
+                   <div className=" list-none text-[gray] flex flex-col gap-2 pb-3">Teams
+                          <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[14px] font-medium  ">Desktop App</li>
+                          <li className="text-black py-2 pr-2 hover:bg-amber-50 rounded-lg w-[70%] text-[14px] font-medium  ">Mobile App</li>
+                      </div>
+                  
+                </div>
+              </div>
               <div className="px-3 cursor-pointer hover:text-button-blue ">Sign up </div>
               <div  className="px-3 cursor-pointer hover:text-button-blue ">Log in </div>
 
@@ -167,10 +116,9 @@ const Header = () => {
 
                 <button className="bg-button-blue text-white rounded-xl px-3 h-10">Get started</button>  
               </div>
-          </div>
+          </section>
             
-        </div>
-    </>
+        </nav>
   )
 }
 
