@@ -7,9 +7,10 @@ import dashed from '../assets/dash-image.png';
 import hero1 from '../assets/hero1.png';
 import pv from '../assets/pv-feature.png';
 import pv3 from '../assets/pv-feature3.png';
+import ParallaxImg from './ParallaxImg';
 const Permissions = () => {
     return (
-        <div className="font-inner mt-30 flex w-screen flex-col items-center justify-center">
+        <div className="font-inner mt-30 flex w-screen flex-col items-center justify-center mb-32 ">
             <section className="flex max-w-[1440px] flex-col">
                 <FadeText Icon={Lock} heading='Permissions' title='Protect all your content' para={["Dash makes it easy to find files across apps and safeguard sensitive content. With AI-powered search" , "and universal access controls, your team stays connected, efficient and secure."]}/>
                 <div className="relative flex">
@@ -78,34 +79,6 @@ const Permissions = () => {
 
 export default Permissions;
 
-const ParallaxImg = ({
-    className,
-    alt,
-    src,
-    start,
-    end,
-}: {
-    className?: string;
-    alt?: string;
-    src: string;
-    start: number;
-    end: number;
-}) => {
-    const ref = useRef(null);
-
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: [`${start}px end`, `end ${end * -1}px`],
-    });
-
-    const opacity = useTransform(scrollYProgress, [0.8, 1], [1, 0]);
-    const scale = useTransform(scrollYProgress, [0.5, 1], [1, 0.85]);
-
-    const y = useTransform(scrollYProgress, [0, 1], [start, end]);
-    const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
-
-    return <motion.img src={src} alt={alt} className={className} ref={ref} style={{ transform, opacity }} />;
-};
 
 const FadeText = ({ heading, title, para  , Icon }: { heading: string; title: string; para: Array<string> , Icon: ComponentType<{ size?: number }>; }) => {
     const ref = useRef(null);

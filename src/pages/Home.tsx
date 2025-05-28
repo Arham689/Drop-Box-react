@@ -1,12 +1,13 @@
 import AnimatedHeroSection from '../components/AnimatedHeroSection';
 import Header from '../components/Header';
+import HeroGradient from '../components/HeroGradient';
 import HeroSection from '../components/HeroSection';
 import Permissions from '../components/Permissions';
 import Tagline from '../components/Tagline';
 
 const Home = () => {
     return (
-        <div className="">
+        <div className=" overflow-x-scroll ">
             {/* tag line */}
             <Tagline />
             {/* heaidng */}
@@ -16,7 +17,9 @@ const Home = () => {
             {/* second section */}
             <AnimatedHeroSection />
             {/* permissions */}
-            <Permissions />
+            <Permissions  />
+            {/* hero Gredient  */}
+            <HeroGradient/>
         </div>
     );
 };
