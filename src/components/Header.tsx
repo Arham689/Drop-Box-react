@@ -1,7 +1,7 @@
 import { Globe } from 'lucide-react';
 const Header = () => {
     return (
-        <nav className="font-inner fixed top-14 flex h-24 w-full justify-between bg-white p-6">
+        <nav className="font-inner fixed top-14 flex h-24 w-full justify-between bg-white p-6 z-30">
             <section className="flex items-center justify-center text-sm font-semibold">
                 <div className="flex items-center justify-center">
                     <div className="bg-button-blue flex h-[40px] w-[40px] items-center justify-center">
