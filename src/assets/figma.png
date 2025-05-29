@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Figma Logo - LogoDix</title>
+  <meta name="description" content="Figma Logos in HD - PNG, SVG and EPS for vector files available. Find the perfect Figma logo fast in LogoDix!">
+	
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="csrf-token" content="d7c8d6dc8f5382f6841831747e50986deb63ffa1e86e878627a9942dfacd1744">
+  <link async rel="stylesheet" type="text/css" href="/screen.css?v=3"/>
+    <link rel="preconnect" href="https://a.pub.network/" crossorigin />
+<link rel="preconnect" href="https://b.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.pub.network/" crossorigin />
+<link rel="preconnect" href="https://d.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://btloader.com/" crossorigin />
+<link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+<link rel="preconnect" href="https://confiant-integrations.global.ssl.fastly.net" crossorigin />
+<link rel="stylesheet" href="https://a.pub.network/logodix-com/cls.css">
+
+<script data-cfasync="false" type="text/javascript">
+  var freestar = freestar || {};
+  freestar.queue = freestar.queue || [];
+  freestar.config = freestar.config || {};
+  freestar.config.enabled_slots = [];
+  freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }
+</script>
+<script src="https://a.pub.network/logodix-com/pubfig.min.js" data-cfasync="false" async></script>
+<script src="//m.servedby-buysellads.com/monetization.js" type="774e551438e65194f6368d4a-text/javascript"></script>
+  
+  <script src="//code.jquery.com/jquery-1.11.2.min.js" type="774e551438e65194f6368d4a-text/javascript"></script>
+  <script src="/jquery.easy-autocomplete.min.js" type="774e551438e65194f6368d4a-text/javascript"></script> 
+  <link rel="stylesheet" href="/easy-autocomplete.min.css">
+</head>
+<body>
+<div id="web">
+	<div id="headerc"><div id="header">
+		<a href="/"><img src="/logo.png" alt="LogoDix logo" /></a>
+        <script type="774e551438e65194f6368d4a-text/javascript">
+    var options = {
+      url: function(phrase) {
+        return "/suggest?q=" + phrase ;
+      },
+      getValue: "name",
+      template: {
+        type: "custom",
+        method: function(value, item) {
+          return "<img src='/logo/"+ item.thumb +"' /> " + value;
+        }
+      },
+      list: {
+        onClickEvent: function() {
+          var result = $("#q").getSelectedItemData();
+          window.location.href = "/" + result.slug;
+        }
+      }
+    };
+
+    $("#q").easyAutocomplete(options);
+
+
+    $('#search').submit(function() {
+      if($("#q").val() == '') {
+        return false;
+      }
+    });
+  </script>
+    <form id="search" method="get" action="/search">
+      <input type="text" id="q" name="q" autocomplete="off" />
+      <button id="submitsearch" title="Search" type="submit">Search</button>
+    </form>      		<br class="clear" />
+	</div></div>
+	<div id="contentc"><div id="content">
+
+    <h1>Figma Logo</h1>
+		<p class="intro">We have found <strong>29 Figma logos</strong>. Do you have a better <strong>Figma</strong> logo file and want to share it? We are working on an upload feature to allow everyone to upload logos!</p>               
+		
+    
+      <!-- Tag ID: logodix_leaderboard_atf -->
+    <div align="center" data-freestar-ad="__300x250 __970x250" id="logodix_leaderboard_atf">
+      <script data-cfasync="false" type="text/javascript">
+        freestar.config.enabled_slots.push({ placementName: "logodix_leaderboard_atf", slotId: "logodix_leaderboard_atf" });
+      </script>
+    </div>
+  
+<div id="grid">
+	<div id="2208302" data-fullimg="/logo/2208302.png" data-or="1667x2500">
+		<a href="/logos/2208302">
+			<img src="/logo/2208302.png" alt="Figma Logo - File:Figma-logo.svg - Wikimedia Commons" title="1667x2500 - PNG - File:Figma-logo.svg - Wikimedia Commons" />
+		</a>
+					</div>
+	<div id="2208303" data-fullimg="/logo/2208303.png" data-or="1374x710">
+		<a href="/logos/2208303">
+			<img src="/logo/2208303.png" alt="Figma Logo - Figma Partners with WordPress to ..." title="1374x710 - PNG - Figma Partners with WordPress to ..." />
+		</a>
+					</div>
+	<div id="2208304" data-fullimg="/logo/2208304.png" data-or="1738x960">
+		<a href="/logos/2208304">
+			<img src="/logo/2208304.png" alt="Figma Logo - Figma Logo | Figma" title="1738x960 - PNG - Figma Logo | Figma" />
+		</a>
+					</div>
+	<div id="2208306" data-fullimg="/logo/2208306.png" data-or="1024x1024">
+		<a href="/logos/2208306">
+			<img src="/logo/2208306.png" alt="Figma Logo - figma" Icon - Download for free – Iconduck" title="1024x1024 - PNG - figma" Icon - Download for free – Iconduck" />
+		</a>
+					</div>
+	<div id="2208306" data-fullimg="/logo/2208306.png" data-or="1067x1690">
+		<a href="/logos/2208306">
+			<img src="/logo/2208306.png" alt="Figma Logo - Figma logo editorial photo ..." title="1067x1690 - PNG - Figma logo editorial photo ..." />
+		</a>
+					</div>
+	<div id="2208307" data-fullimg="/logo/2208307.png" data-or="1000x1000">
+		<a href="/logos/2208307">
+			<img src="/logo/2208307.png" alt="Figma Logo - figma logo png for Creative Design" title="1000x1000 - PNG - figma logo png for Creative Design" />
+		</a>
+					</div>
+	<div id="2208308" data-fullimg="/logo/2208308.png" data-or="1920x960">
+		<a href="/logos/2208308">
+			<img src="/logo/2208308.png" alt="Figma Logo - Figma logo | Figma" title="1920x960 - PNG - Figma logo | Figma" />
+		</a>
+					</div>
+	<div id="2208309" data-fullimg="/logo/2208309.png" data-or="2500x689">
+		<a href="/logos/2208309">
+			<img src="/logo/2208309.png" alt="Figma Logo - Figma Logo PNG With Transparent Background" title="2500x689 - PNG - Figma Logo PNG With Transparent Background" />
+		</a>
+					</div>
+	<div id="2208311" data-fullimg="/logo/2208311.gif" data-or="1600x1200">
+		<a href="/logos/2208311">
+			<img src="/logo/2208311.gif" alt="Figma Logo - Figma logo animation by Sergio Cabañero ..." title="1600x1200 - GIF - Figma logo animation by Sergio Cabañero ..." />
+		</a>
+					</div>
+	<div id="2208312" data-fullimg="/logo/2208312.png" data-or="1366x2048">
+		<a href="/logos/2208312">
+			<img src="/logo/2208312.png" alt="Figma Logo - Figma Logo PNG Transparent Images" title="1366x2048 - PNG - Figma Logo PNG Transparent Images" />
+		</a>
+					</div>
+	<div id="2208316" data-fullimg="/logo/2208316.png" data-or="1920x500">
+		<a href="/logos/2208316">
+			<img src="/logo/2208316.png" alt="Figma Logo - Why Use Figma? Unveiling the Design ..." title="1920x500 - PNG - Why Use Figma? Unveiling the Design ..." />
+		</a>
+					</div>
+	<div id="2208317" data-fullimg="/logo/2208317.png" data-or="1347x960">
+		<a href="/logos/2208317">
+			<img src="/logo/2208317.png" alt="Figma Logo - Figma Logo | Figma" title="1347x960 - PNG - Figma Logo | Figma" />
+		</a>
+					</div>
+	<div id="2208318" data-fullimg="/logo/2208318.jpg" data-or="1600x838">
+		<a href="/logos/2208318">
+			<img src="/logo/2208318.jpg" alt="Figma Logo - Figma Integration in Knapsack ..." title="1600x838 - JPG - Figma Integration in Knapsack ..." />
+		</a>
+					</div>
+	<div id="2208319" data-fullimg="/logo/2208319.jpg" data-or="1000x1000">
+		<a href="/logos/2208319">
+			<img src="/logo/2208319.jpg" alt="Figma Logo - Figma logo" Poster for Sale by ..." title="1000x1000 - JPG - Figma logo" Poster for Sale by ..." />
+		</a>
+					</div>
+	<div id="2208320" data-fullimg="/logo/2208320.jpg" data-or="1600x1200">
+		<a href="/logos/2208320">
+			<img src="/logo/2208320.jpg" alt="Figma Logo - Figma Redesigned Logo ❤️ : r/FigmaDesign" title="1600x1200 - JPG - Figma Redesigned Logo ❤️ : r/FigmaDesign" />
+		</a>
+					</div>
+	<div id="2208321" data-fullimg="/logo/2208321.png" data-or="1400x827">
+		<a href="/logos/2208321">
+			<img src="/logo/2208321.png" alt="Figma Logo - How Figma converts users from freemium ..." title="1400x827 - PNG - How Figma converts users from freemium ..." />
+		</a>
+					</div>
+	<div id="2208322" data-fullimg="/logo/2208322.png" data-or="1280x720">
+		<a href="/logos/2208322">
+			<img src="/logo/2208322.png" alt="Figma Logo - FIGMA" title="1280x720 - PNG - FIGMA" />
+		</a>
+					</div>
+	<div id="2208323" data-fullimg="/logo/2208323.jpg" data-or="1980x938">
+		<a href="/logos/2208323">
+			<img src="/logo/2208323.jpg" alt="Figma Logo - 18 Figma Plugins You Need to Have to ..." title="1980x938 - JPG - 18 Figma Plugins You Need to Have to ..." />
+		</a>
+					</div>
+	<div id="2208324" data-fullimg="/logo/2208324.png" data-or="1404x2048">
+		<a href="/logos/2208324">
+			<img src="/logo/2208324.png" alt="Figma Logo - figma logo" Icon - Download for free ..." title="1404x2048 - PNG - figma logo" Icon - Download for free ..." />
+		</a>
+					</div>
+	<div id="2208325" data-fullimg="/logo/2208325.png" data-or="1200x897">
+		<a href="/logos/2208325">
+			<img src="/logo/2208325.png" alt="Figma Logo - creating icons and logos in Figma ..." title="1200x897 - PNG - creating icons and logos in Figma ..." />
+		</a>
+					</div>
+	<div id="2208326" data-fullimg="/logo/2208326.unknown" data-or="1920x1920">
+		<a href="/logos/2208326">
+			<img src="/logo/2208326.unknown" alt="Figma Logo - Figma 3d logo black background 42165847 PNG" title="1920x1920 - UNKNOWN - Figma 3d logo black background 42165847 PNG" />
+		</a>
+					</div>
+	<div id="2208328" data-fullimg="/logo/2208328.png" data-or="1707x960">
+		<a href="/logos/2208328">
+			<img src="/logo/2208328.png" alt="Figma Logo - Figma loader animation with fake 3D ..." title="1707x960 - PNG - Figma loader animation with fake 3D ..." />
+		</a>
+					</div>
+	<div id="2208331" data-fullimg="/logo/2208331.png" data-or="1584x1188">
+		<a href="/logos/2208331">
+			<img src="/logo/2208331.png" alt="Figma Logo - Figma Logo by Vahid Motta on Dribbble" title="1584x1188 - PNG - Figma Logo by Vahid Motta on Dribbble" />
+		</a>
+					</div>
+	<div id="2208334" data-fullimg="/logo/2208334.jpg" data-or="1000x1000">
+		<a href="/logos/2208334">
+			<img src="/logo/2208334.jpg" alt="Figma Logo - Figma logo parts" iPhone Case for Sale ..." title="1000x1000 - JPG - Figma logo parts" iPhone Case for Sale ..." />
+		</a>
+					</div>
+	<div id="2208340" data-fullimg="/logo/2208340.png" data-or="1918x634">
+		<a href="/logos/2208340">
+			<img src="/logo/2208340.png" alt="Figma Logo - Figma • rsms" title="1918x634 - PNG - Figma • rsms" />
+		</a>
+					</div>
+	<div id="2208347" data-fullimg="/logo/2208347.png" data-or="1200x1200">
+		<a href="/logos/2208347">
+			<img src="/logo/2208347.png" alt="Figma Logo - Figma Logo Icon, Logo, Icon, Design PNG ..." title="1200x1200 - PNG - Figma Logo Icon, Logo, Icon, Design PNG ..." />
+		</a>
+					</div>
+	<div id="2208350" data-fullimg="/logo/2208350.jpg" data-or="2300x1294">
+		<a href="/logos/2208350">
+			<img src="/logo/2208350.jpg" alt="Figma Logo - Auto Layout & Variants in Figma: Design ..." title="2300x1294 - JPG - Auto Layout & Variants in Figma: Design ..." />
+		</a>
+					</div>
+	<div id="2208353" data-fullimg="/logo/2208353.jpg" data-or="1024x1024">
+		<a href="/logos/2208353">
+			<img src="/logo/2208353.jpg" alt="Figma Logo - OBJ file LOGO FIGMA HIGH QUALITY " title="1024x1024 - JPG - OBJ file LOGO FIGMA HIGH QUALITY " />
+		</a>
+					</div>
+	<div id="2208355" data-fullimg="/logo/2208355.png" data-or="1280x720">
+		<a href="/logos/2208355">
+			<img src="/logo/2208355.png" alt="Figma Logo - Deploying for design at scale (with ..." title="1280x720 - PNG - Deploying for design at scale (with ..." />
+		</a>
+					</div>
+ 
+
+
+
+</div>
+ 
+<div id="sidebar">
+      <!-- Tag ID: logodix_skyscraper_right -->
+    <div align="center" data-freestar-ad="__300x600 __300x600" id="logodix_skyscraper_right">
+      <script data-cfasync="false" type="text/javascript">
+        freestar.config.enabled_slots.push({ placementName: "logodix_skyscraper_right", slotId: "logodix_skyscraper_right" });
+      </script>
+    </div>
+  </div>
+
+
+
+	<div id="related">			
+					</ul>
+	</div>
+
+<script type="774e551438e65194f6368d4a-text/javascript">
+var _statcounter = _statcounter || [];
+_statcounter.push({"tags": {"p": "k"}});
+</script>
+	</div></div>
+	<br class="clear" />
+		<div id="statsc"><div id="stats">
+		<p><span id="nlogos">146,676</span> <span class="tstats">logos of</span> <span id="ncats">4,892</span> <span class="tstats">brands, shapes and colors.</span></p>
+	</div></div>
+	<br class="clear" />
+	
+	<div id="alphac"><div id="alpha">
+		<h2>Logos by Letter</h2>
+		   	<a href="/a-logos" title="A Logos"><img src="/img/a.png" alt="Logos with letter A" /></a>
+		   	<a href="/b-logos" title="B Logos"><img src="/img/b.png" alt="Logos with letter B" /></a>
+		   	<a href="/c-logos" title="C Logos"><img src="/img/c.png" alt="Logos with letter C" /></a>
+		   	<a href="/d-logos" title="D Logos"><img src="/img/d.png" alt="Logos with letter D" /></a>
+		   	<a href="/e-logos" title="E Logos"><img src="/img/e.png" alt="Logos with letter E" /></a>
+		   	<a href="/f-logos" title="F Logos"><img src="/img/f.png" alt="Logos with letter F" /></a>
+		   	<a href="/g-logos" title="G Logos"><img src="/img/g.png" alt="Logos with letter G" /></a>
+		   	<a href="/h-logos" title="H Logos"><img src="/img/h.png" alt="Logos with letter H" /></a>
+		   	<a href="/i-logos" title="I Logos"><img src="/img/i.png" alt="Logos with letter I" /></a>
+		   	<a href="/j-logos" title="J Logos"><img src="/img/j.png" alt="Logos with letter J" /></a>
+		   	<a href="/k-logos" title="K Logos"><img src="/img/k.png" alt="Logos with letter K" /></a>
+		   	<a href="/l-logos" title="L Logos"><img src="/img/l.png" alt="Logos with letter L" /></a>
+		   	<a href="/m-logos" title="M Logos"><img src="/img/m.png" alt="Logos with letter M" /></a>
+		   	<a href="/n-logos" title="N Logos"><img src="/img/n.png" alt="Logos with letter N" /></a>
+		   	<a href="/o-logos" title="O Logos"><img src="/img/o.png" alt="Logos with letter O" /></a>
+		   	<a href="/p-logos" title="P Logos"><img src="/img/p.png" alt="Logos with letter P" /></a>
+		   	<a href="/q-logos" title="Q Logos"><img src="/img/q.png" alt="Logos with letter Q" /></a>
+		   	<a href="/r-logos" title="R Logos"><img src="/img/r.png" alt="Logos with letter R" /></a>
+		   	<a href="/s-logos" title="S Logos"><img src="/img/s.png" alt="Logos with letter S" /></a>
+		   	<a href="/t-logos" title="T Logos"><img src="/img/t.png" alt="Logos with letter T" /></a>
+		   	<a href="/u-logos" title="U Logos"><img src="/img/u.png" alt="Logos with letter U" /></a>
+		   	<a href="/v-logos" title="V Logos"><img src="/img/v.png" alt="Logos with letter V" /></a>
+		   	<a href="/w-logos" title="W Logos"><img src="/img/w.png" alt="Logos with letter W" /></a>
+		   	<a href="/x-logos" title="X Logos"><img src="/img/x.png" alt="Logos with letter X" /></a>
+		   	<a href="/y-logos" title="Y Logos"><img src="/img/y.png" alt="Logos with letter Y" /></a>
+		   	<a href="/z-logos" title="Z Logos"><img src="/img/z.png" alt="Logos with letter Z" /></a>
+			</div></div>
+	<br class="clear" />
+	
+	<div id="categoriesc"><div id="categories">
+		<h2>Logo Categories</h2>
+		<div id="catlist">
+			<ul>
+		    					<li><a href="/agriculture-logos">Agriculture</a>
+										<li><a href="/animals-pets-logos">Animals & Pets</a>
+										<li><a href="/business-consulting-logos">Business & Consulting</a>
+										<li><a href="/car-motor-logos">Car & Motor</a>
+										<li><a href="/communication-logos">Communication</a>
+										<li><a href="/education-logos">Education</a>
+										<li><a href="/energy-logos">Energy</a>
+										<li><a href="/entertainment-logos">Entertainment</a>
+										<li><a href="/environment-green-logos">Environment & Green</a>
+										<li><a href="/fashion-beauty-logos">Fashion & Beauty</a>
+										<li><a href="/finance-accounting-logos">Finance & Accounting</a>
+										<li><a href="/food-drink-logos">Food & Drink</a>
+										<li><a href="/games-recreation-logos">Games & Recreation</a>
+										<li><a href="/industrial-engineering-logos">Industrial & Engineering</a>
+										<li><a href="/internet-it-logos">Internet & IT</a>
+										<li><a href="/legal-logos">Legal</a>
+										<li><a href="/manufacturing-logos">Manufacturing</a>
+										<li><a href="/media-logos">Media</a>
+										<li><a href="/medical-health-logos">Medical & Health</a>
+										<li><a href="/music-logos">Music</a>
+										<li><a href="/non-profit-logos">Non-Profit</a>
+										<li><a href="/real-estate-logos">Real Estate</a>
+										<li><a href="/restaurants-logos">Restaurants</a>
+										<li><a href="/retail-sale-logos">Retail & Sale</a>
+										<li><a href="/sports-fitness-logos">Sports & Fitness</a>
+										<li><a href="/transportation-logos">Transportation</a>
+										<li><a href="/travel-hotel-logos">Travel & Hotel</a>
+								</ul>
+		</div>
+	</div></div>
+	<div id="footer">
+		<div id="footermenuc"><div id="footermenu">
+			<div class="footersubmenu">
+				<h2>LogoDix</h2>
+				<ul>
+					<li><a href="/about-us">About Us</a></li>
+										<li><a href="/contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footersubmenu">
+				<h2>Resources</h2>
+				<ul>
+										<li><a href="/request">Request a Logo</a></li>
+					<li><a href="/links">Links</a></li>
+					<li><button id="pmLink">Privacy Manager</button></li>
+				</ul>
+			</div>
+			<div class="footersubmenu">
+				<h2>Legal</h2>
+				<ul>
+					<li><a href="/terms-of-service">Terms of Service</a></li>
+					<li><a href="/privacy-policy">Privacy Policy</a></li>
+					<li><a href="/dmca">DMCA Complaint</a></li>
+				</ul>
+			</div>
+			<br class="clear" />
+		</div></div>
+		<div id="subfooterc"><div id="subfooter">
+			<p id="from">Made with love & tons of coffee in <a href="https://www.google.com/maps/place/Berkeley,%20CA">Berkeley</a>, <a href="https://www.google.com/maps/place/Berlin">Berlin</a>, and <a href="https://www.google.com/maps/place/Bangkok">Bangkok</a>.</p>
+			<p id="copy">LogoDix &copy; 2018 - 2025. All rights reserved.</p>
+			<br class="clear" />
+		</div></div>
+	</div>
+</div>
+<style>
+    #pmLink {
+        visibility: hidden;
+        text-decoration: none;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        color: #dee2e6;
+        padding: 0;
+        font-size: 100%;
+    }
+</style>
+
+
+<!-- Default Statcounter code for logopix.com
+http://logopix.com -->
+<script type="774e551438e65194f6368d4a-text/javascript">
+var sc_project=11947809; 
+var sc_invisible=1; 
+var sc_security="813031af"; 
+var sc_https=1; 
+</script>
+<script type="774e551438e65194f6368d4a-text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/11947809/0/813031af/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<!-- GDFHVCMV212148678 -->
+<script type="774e551438e65194f6368d4a-text/javascript">
+(function(){
+  if(typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('flexbar', 'CE7DKK7U', 'placement:logodixcom');
+  }
+})();
+</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="774e551438e65194f6368d4a-|49" defer></script></body>
+</html>

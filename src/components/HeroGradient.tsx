@@ -1,12 +1,23 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion,  useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, LockKeyhole } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
+import thumbnail2 from '../assets/BrianThumb2.png';
+import thumbnail1 from '../assets/JustinThumb1.png';
 import security4 from '../assets/permissions-en_GB.png';
 import security1 from '../assets/security-left-1.png';
 import security2 from '../assets/security-left-2.png';
 import security3 from '../assets/security-left-3.png';
 import ParallaxImg from './ParallaxImg';
+
+import greenhouse from '../assets/greenhouse.png';
+import hydro from '../assets/hydroflask.png';
+import jamf from '../assets/jamf_logo.png';
+import may from '../assets/mary_kay.png';
+import mcleran from '../assets/mclaren.png';
+import sundance from '../assets/sundance.png';
+import wag from '../assets/wag.png';
+
 const HeroGradient = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -17,12 +28,31 @@ const HeroGradient = () => {
     useEffect(() => {
         scrollYProgress.onChange((v) => console.log('Scroll progress:', v));
     }, [scrollYProgress]);
+
+    const cardVariants = {
+        hidden: {
+            opacity: 0,
+            y: 20, 
+            filter: 'blur(10px)', 
+            scale : 0 
+        },
+        visible: {
+            opacity: 1,
+            y: 0, 
+            filter: 'blur(0px)', 
+            transition: {
+                duration: 0.8, 
+                ease: [0.17, 0.67, 0.83, 0.67], 
+            },
+            scale : "100%"
+        },
+    };
     return (
         <div className="flex justify-center px-12">
             <motion.section
                 ref={ref}
                 style={{ width }}
-                className="from-grad-gray relative -z-50 h-[1800px] w-full rounded-2xl bg-gradient-to-b from-10% to-black px-4 py-32"
+                className="from-grad-gray relative -z-50 h-[1800px] w-full rounded-2xl bg-gradient-to-b from-10% to-black px-4 py-32 my-28"
             >
                 <div>
                     <div ref={ref} className="mb-14 flex flex-col items-center gap-2.5 text-white">
@@ -77,8 +107,104 @@ const HeroGradient = () => {
                 </div>
 
                 {/* horizontal scroll is not woking  */}
-                <div className="overflow-x-scroll px-[50%] pt-24">
-                    <div className="h-96 w-[2208px] rounded-2xl bg-red-300"></div>
+                <div className="flex justify-center gap-4 overflow-x-hidden pt-24">
+                    <motion.div
+                        className="bg-grad-gray flex h-[300px] w-[720px] shrink-0 rounded-2xl p-3"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        variants={cardVariants}
+                    >
+                        <div>
+                            <img
+                                width={275}
+                                height={275}
+                                className="rounded-2xl"
+                                src={thumbnail1}
+                                alt="Testimonial 1"
+                            />
+                        </div>
+                        <div className="flex flex-col items-start gap-2 p-4">
+                            <div className="text-sm text-pink-500">Testimonial</div>
+                            <div className="font-heading text-xl text-white">
+                                "The seriously impressive security <br />
+                                features"
+                            </div>
+                            <div className="text-[gray]">
+                                tech influencer Justin Tse discusses why he trusts <br /> Dropbox to keep his content
+                                safe
+                            </div>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        className="bg-grad-gray flex h-[300px] w-[720px] shrink-0 rounded-2xl p-3"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        variants={cardVariants}
+                        transition={{ ...cardVariants.visible.transition, delay: 0.2 }}
+                    >
+                        <div>
+                            <img
+                                width={275}
+                                height={275}
+                                className="rounded-2xl"
+                                src={thumbnail2}
+                                alt="Testimonial 2"
+                            />
+                        </div>
+                        <div className="flex flex-col items-start gap-2 p-4">
+                            <div className="text-sm text-pink-500">Testimonial</div>
+                            <div className="font-heading text-xl text-white">
+                                "The security of knowing our <br />
+                                information is safe"
+                            </div>
+                            <div className="text-[gray]">
+                                Customer Bryan Chandler reveals how his team uses <br /> Dropbox to organize and share
+                                files securely.
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+
+                <div className="relative w-full overflow-hidden">
+                    <div className="pointer-events-none absolute top-0 left-0 z-40 h-full w-16 bg-gradient-to-r from-black" />
+                    <div className="pointer-events-none absolute top-0 right-0 z-40 h-full w-16 bg-gradient-to-l from-black" />
+
+                    <div className="relative w-full ">
+                        <motion.div
+                            initial={{ x: 0 }}
+                            animate={{ x: '-50%' }}
+                            transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+                            className="mt-24 flex w-max gap-5 whitespace-nowrap text-white"
+                        >
+                            {[hydro, mcleran, sundance, jamf, may, greenhouse, wag].map((item, index) => (
+                                <div
+                                    key={`first-${index}`}
+                                    className="flex h-[150px] w-[150px] shrink-0 items-center justify-center"
+                                >
+                                    <img src={item} className="h-full w-full object-contain" />
+                                </div>
+                            ))}
+
+                            {[hydro, mcleran, sundance, jamf, may, greenhouse, wag].map((item, index) => (
+                                <div
+                                    key={`second-${index}`}
+                                    className="flex h-[150px] w-[150px] shrink-0 items-center justify-center"
+                                >
+                                    <img src={item} className="h-full w-full object-contain" />
+                                </div>
+                            ))}
+                            {[hydro, mcleran, sundance, jamf, may, greenhouse, wag].map((item, index) => (
+                                <div
+                                    key={`second-${index}`}
+                                    className="flex h-[150px] w-[150px] shrink-0 items-center justify-center"
+                                >
+                                    <img src={item} className="h-full w-full object-contain" />
+                                </div>
+                            ))}
+                        </motion.div>
+                    </div>
                 </div>
             </motion.section>
         </div>

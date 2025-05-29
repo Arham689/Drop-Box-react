@@ -5,7 +5,6 @@ const HeroSection = () => {
             <section className="mt-[154px] mb-14 max-w-[1440px]">
                 <div className="flex h-[740px] items-center">
                     <div className="font-inner w-[610px] p-12">
-                        {/* Tag + Title */}
                         <div className="flex items-center-safe gap-3 space-y-2">
                             <p className="bg-button-blue inline-block rounded-full border px-3 py-1 text-xs font-medium text-white">
                                 New
@@ -15,19 +14,16 @@ const HeroSection = () => {
                             </p>
                         </div>
 
-                        {/* Heading */}
                         <h1 className="text-5xl font-bold">
                             Find anything. <br />
                             Protect everything.
                         </h1>
 
-                        {/* Subtext */}
                         <p className="text-[20px] leading-relaxed text-[gray]">
                             Find, organise and protect your work with Dropbox Dash. Now with advanced search for video,
                             images and team members—plus generative AI capabilities across even more connected apps.
                         </p>
 
-                        {/* Buttons */}
                         <div className="flex flex-wrap gap-4 pt-4">
                             <button className="bg-button-blue h-[78px] rounded-xl p-6 text-center text-sm text-[20px] font-medium text-white">
                                 What’s new with Dash →
