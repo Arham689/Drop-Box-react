@@ -1,15 +1,13 @@
-import React from 'react';
-
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-8">
+    <footer className="bg-black text-white py-8 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main footer content */}
-        <div className="grid grid-cols-6 gap-12 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12 mb-8 md:mb-16">
           {/* Dropbox Column */}
           <div className="space-y-4">
-            <h3 className="text-white font-medium text-base mb-6">Dropbox</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-medium text-base mb-4 md:mb-6">Dropbox</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Desktop app</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Mobile app</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Integrations</a></li>
@@ -24,8 +22,8 @@ const Footer = () => {
 
           {/* Products Column */}
           <div className="space-y-4">
-            <h3 className="text-white font-medium text-base mb-6">Products</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-medium text-base mb-4 md:mb-6">Products</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Plus</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Professional</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Business</a></li>
@@ -41,8 +39,8 @@ const Footer = () => {
 
           {/* Features Column */}
           <div className="space-y-4">
-            <h3 className="text-white font-medium text-base mb-6">Features</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-medium text-base mb-4 md:mb-6">Features</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Send large files</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Send long videos</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Cloud photo storage</a></li>
@@ -57,8 +55,8 @@ const Footer = () => {
 
           {/* Support Column */}
           <div className="space-y-4">
-            <h3 className="text-white font-medium text-base mb-6">Support</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-medium text-base mb-4 md:mb-6">Support</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Help center</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Contact us</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Privacy & terms</a></li>
@@ -72,8 +70,8 @@ const Footer = () => {
 
           {/* Resources Column */}
           <div className="space-y-4">
-            <h3 className="text-white font-medium text-base mb-6">Resources</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-medium text-base mb-4 md:mb-6">Resources</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Blog</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Customer stories</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Resources library</a></li>
@@ -88,8 +86,8 @@ const Footer = () => {
 
           {/* Company Column */}
           <div className="space-y-4">
-            <h3 className="text-white font-medium text-base mb-6">Company</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-medium text-base mb-4 md:mb-6">Company</h3>
+            <ul className="space-y-2 md:space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">About us</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Jobs</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">Investor relations</a></li>
@@ -99,7 +97,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex items-center space-x-4 mb-12">
+        <div className="flex items-center justify-center sm:justify-start space-x-4 mb-8 md:mb-12">
           {/* Twitter/X Icon */}
           <a href="#" className="text-gray-300 hover:text-white transition-colors">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -123,8 +121,8 @@ const Footer = () => {
         </div>
 
         {/* Language Selector */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex items-center">
+        <div className="border-t border-gray-800 pt-6 md:pt-8">
+          <div className="flex items-center justify-center sm:justify-start">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" className="text-gray-300 mr-2">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
             </svg>

@@ -9,22 +9,22 @@ import Tagline from '../components/Tagline';
 
 const Home = () => {
     return (
-        <div className="">
-            {/* tag line */}
+        <div className=" relative ">
+
             <Tagline />
-            {/* heaidng */}
+
             <Header />
-            {/* hero section  */}
+
             <HeroSection />
-            {/* second section */}
+
             <AnimatedHeroSection />
-            {/* permissions */}
+
             <Permissions />
-            {/* hero Gredient  */}
+
             <HeroGradient />
-            {/* final section  */}
+
             <FinalSection />
-            {/* Footer */}
+
             <Footer />
         </div>
     );

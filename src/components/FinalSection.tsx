@@ -30,10 +30,10 @@ const FinalSection = () => {
         },
     };
     return (
-        <div className="my-20  w-screen">
-            <section className="flex flex-col items-center justify-center gap-11 py-28">
+        <div className="my-2  w-screen ">
+            <section className="flex flex-col items-center justify-center gap-11 py-2">
                 <h2 className="font-mediun font-heading text-4xl">Dropbox empowers across industries</h2>
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -85,14 +85,15 @@ const FinalSection = () => {
                 </div>
             </section>
 
-            <section className="my-28 flex flex-col items-center justify-center gap-11">
+            <section className="my-2 flex flex-col  items-center justify-center gap-11">
                 <h2 className="font-mediun font-heading text-4xl">Discover, Learn, thrive with Dropbox</h2>
-                <div className="mt-8 flex gap-3">
+               <div className="mt-8 flex flex-col gap-6 md:flex-row md:gap-3 md:overflow-x-scroll md:px-6">
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
                         variants={cardVariants}
+                        className=' shrink-0'
                     >
                         <ArticleCard
                             src={article1}
@@ -103,7 +104,8 @@ const FinalSection = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
-                        variants={cardVariants}
+                        variants={cardVariants} 
+                        className=' shrink-0'
                     >
                         <ArticleCard
                             src={article2}
@@ -115,6 +117,7 @@ const FinalSection = () => {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
                         variants={cardVariants}
+                        className=' shrink-0'
                     >
                         <ArticleCard src={article3} title="The best way to share photos with family and friends" />
                     </motion.div>
@@ -128,8 +131,8 @@ export default FinalSection;
 
 const Card = ({ src, heading }: { src: string; heading: string }) => {
     return (
-        <div className="flex w-[520px] items-center rounded-2xl bg-[#F9F7F4] p-6">
-            <img src={src} alt="Construction" className="h-[150px] w-[150px] rounded-xl object-cover" />
+        <div className="flex lg:w-[520px] items-center rounded-2xl bg-[#F9F7F4] p-6">
+            <img src={src} alt="Construction" className=" hidden lg:block h-[150px] w-[150px] rounded-xl object-cover" />
             <div className="ml-6 flex flex-col gap-2">
                 <h2 className="text-xl font-semibold text-[#1E1E1E]">{heading}</h2>
                 <p className="text-sm text-[#5B5B5B]">
@@ -146,26 +149,23 @@ const Card = ({ src, heading }: { src: string; heading: string }) => {
         </div>
     );
 };
-
 const ArticleCard = ({ src, title }: { src: string; title: string }) => {
-    return (
-        <div className="h-[490px] w-[350px] overflow-hidden rounded-2xl bg-[#F9F7F4] shadow-md">
-            <img src={src} alt="Article Thumbnail" className="h-[180px] w-full object-cover" />
+  return (
+    <div className="w-[90vw] max-w-sm md:w-[300px] shrink-0 rounded-2xl bg-[#F9F7F4] shadow-md">
+      <img src={src} alt="Article Thumbnail" className="h-[160px] md:h-[180px] w-full object-cover rounded-t-2xl" />
 
-            <div className="flex flex-col gap-3 p-6">
-                <span className="text-sm font-semibold text-gray-500">Article</span>
+      <div className="flex flex-col gap-3 p-4 md:p-6">
+        <span className="text-sm font-semibold text-gray-500">Article</span>
 
-                <h3 className="text-lg leading-snug font-bold text-black">{title}</h3>
+        <h3 className="text-base md:text-lg leading-snug font-bold text-black">{title}</h3>
 
-                <p className="text-sm text-gray-600">
-                    For our study, Economist Impact included knowledge workers globally, and found that, no matter where
-                    people work, there’s a significant cost to lost focus around the world.
-                </p>
+        <p className="text-sm text-gray-600 hidden md:block">
+          For our study, Economist Impact included knowledge workers globally, and found that, no matter where people work, there’s a significant cost to lost focus around the world.
+        </p>
 
-                <a href="#" className="mt-auto text-sm font-semibold text-black underline underline-offset-4">
-                    Read article
-                </a>
-            </div>
-        </div>
-    );
-};
+        <a href="#" className="mt-auto text-sm font-semibold text-black underline underline-offset-4">
+          Read article
+        </a>
+      </div>
+    </div>
+  );}
