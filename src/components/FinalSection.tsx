@@ -87,7 +87,7 @@ const FinalSection = () => {
 
             <section className="my-2 flex flex-col  items-center justify-center gap-11">
                 <h2 className="font-mediun font-heading text-4xl">Discover, Learn, thrive with Dropbox</h2>
-               <div className="mt-8 flex flex-col gap-6 md:flex-row md:gap-3 md:overflow-x-scroll md:px-6">
+               <div className="mt-8 flex flex-col gap-6 lg:flex-row md:gap-3 lg:overflow-x-scroll lg:px-6">
                     <motion.div
                         initial="hidden"
                         whileInView="visible"

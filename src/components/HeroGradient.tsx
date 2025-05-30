@@ -1,7 +1,7 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowRight, LockKeyhole } from 'lucide-react';
-import { useEffect, useRef } from 'react';
-import '../App.css'
+import { useEffect, useRef, useState } from 'react';
+import '../App.css';
 import thumbnail2 from '../assets/BrianThumb2.png';
 import thumbnail1 from '../assets/JustinThumb1.png';
 import security4 from '../assets/permissions-en_GB.png';
@@ -20,14 +20,25 @@ import wag from '../assets/wag.png';
 
 const HeroGradient = () => {
     const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ['start end', 'end start'],
-    });
-    const width = useTransform(scrollYProgress, [0, 0.27], ['75%', '100%']);
+    // const { scrollYProgress } = useScroll({
+    //     target: ref,
+    //     offset: ['start end', 'end start'],
+    // });
+    const images = [mcleran, sundance, jamf, may, greenhouse, wag];
+
+    const marqueeContentRef = useRef<HTMLDivElement>(null);
+
+    const [singleContentWidth, setSingleContentWidth] = useState(0);
+
     useEffect(() => {
-        scrollYProgress.onChange((v) => console.log('Scroll progress:', v));
-    }, [scrollYProgress]);
+        if (marqueeContentRef.current) {
+            setSingleContentWidth(marqueeContentRef.current.scrollWidth / 2);
+        }
+    }, []);
+
+    // useEffect(() => {
+    //     scrollYProgress.onChange((v) => console.log('Scroll progress:', v));
+    // }, [scrollYProgress]);
 
     const cardVariants = {
         hidden: {
@@ -168,43 +179,46 @@ const HeroGradient = () => {
                                 </div>
                             </div>
                         </motion.div>
-                        
                     </div>
 
-                    <div className="relative w-full overflow-hidden">
-                        <div className="pointer-events-none absolute top-0 left-0 z-30 h-full w-16 bg-gradient-to-r from-black" />
-                        <div className="pointer-events-none absolute top-0 right-0 z-30 h-full w-16 bg-gradient-to-l from-black" />
+                    <div className="relative w-full overflow-hidden py-10">
+                        <div className="pointer-events-none absolute top-0 left-0 z-30 h-full w-1/6 bg-gradient-to-r from-black via-black/50 to-transparent" />
+                        <div className="pointer-events-none absolute top-0 right-0 z-30 h-full w-1/6 bg-gradient-to-l from-black via-black/50 to-transparent" />
 
                         <div className="relative w-full">
                             <motion.div
-                                initial={{ x: 0 }}
-                                animate={{ x: '-50%' }}
-                                transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+                                ref={marqueeContentRef}
+                                animate={{ x: -singleContentWidth }}
+                                transition={{
+                                    duration: 30,
+                                    repeat: Infinity,
+                                    ease: 'linear',
+                                }}
                                 className="mt-24 flex w-max gap-5 whitespace-nowrap text-white"
                             >
-                                {[hydro, mcleran, sundance, jamf, may, greenhouse, wag].map((item, index) => (
+                                {images.map((item, index) => (
                                     <div
                                         key={`first-${index}`}
-                                        className="flex h-[150px] w-[150px] shrink-0 items-center justify-center"
+                                        className="bg-grad-gray flex h-[150px] w-[150px] shrink-0 items-center justify-center rounded-lg p-2 shadow-lg"
                                     >
-                                        <img src={item} className="h-full w-full object-contain" />
+                                        <img
+                                            src={item}
+                                            className="h-full w-full rounded object-contain"
+                                            alt={`Brand logo ${index + 1}`}
+                                        />
                                     </div>
                                 ))}
 
-                                {[hydro, mcleran, sundance, jamf, may, greenhouse, wag].map((item, index) => (
+                                {images.map((item, index) => (
                                     <div
                                         key={`second-${index}`}
-                                        className="flex h-[150px] w-[150px] shrink-0 items-center justify-center"
+                                        className="bg-grad-gray flex h-[150px] w-[150px] shrink-0 items-center justify-center rounded-lg p-2 shadow-lg"
                                     >
-                                        <img src={item} className="h-full w-full object-contain" />
-                                    </div>
-                                ))}
-                                {[hydro, mcleran, sundance, jamf, may, greenhouse, wag].map((item, index) => (
-                                    <div
-                                        key={`second-${index}`}
-                                        className="flex h-[150px] w-[150px] shrink-0 items-center justify-center"
-                                    >
-                                        <img src={item} className="h-full w-full object-contain" />
+                                        <img
+                                            src={item}
+                                            className="h-full w-full rounded object-contain"
+                                            alt={`Brand logo ${index + 1 + images.length}`}
+                                        />
                                     </div>
                                 ))}
                             </motion.div>
@@ -212,7 +226,6 @@ const HeroGradient = () => {
                     </div>
                 </section>
             </div>
-
 
             {/* mobile view  */}
             <div className="flex w-full flex-col items-center gap-3 pt-2 lg:hidden">

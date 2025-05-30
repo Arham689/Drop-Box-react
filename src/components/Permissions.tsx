@@ -8,8 +8,12 @@ import hero1 from '../assets/hero1.png';
 import pv from '../assets/pv-feature.png';
 import pv3 from '../assets/pv-feature3.png';
 import ParallaxImg from './ParallaxImg';
+import { useMediaQuery } from '../hooks/useMediaQuery';
 
 const Permissions = () => {
+    const isDesktop = useMediaQuery('(min-width: 768px)')
+
+
     return (
         <div className="font-inner mt-30 mb-32 flex w-screen flex-col items-center justify-center">
             <section className="flex max-w-[1440px] flex-col">
@@ -61,8 +65,8 @@ const Permissions = () => {
                     ]}
                 />
 
-                <div className="relative hidden lg:flex">
-                    <ParallaxImg src={pv} alt="" start={205} end={-175} className="absolute right-70 z-20 w-[650px]" />{' '}
+                <div className="relative hidden  lg:flex">
+                    <ParallaxImg src={pv} alt="" start={205} end={-175} disable={!isDesktop} className="absolute right-70 z-20 w-[650px]" />{' '}
                     {/** ml-24*/}
                     <ParallaxImg
                         src={backasset}
@@ -70,6 +74,7 @@ const Permissions = () => {
                         start={0}
                         end={-70}
                         className="absolute -right-25 z-10 w-[450px]"
+                        disable={!isDesktop}
                     />{' '}
                     {/** left-96  ml-24*/}
                 </div>
